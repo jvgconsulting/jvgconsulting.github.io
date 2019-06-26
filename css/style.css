@@ -1,0 +1,335 @@
+/*Website Header CSS*/
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d2dbe8 /*#C2CAD0*/
+}
+
+.header {
+  height: 10px;
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 100px;
+}
+
+.header a{
+	background-color: #FFFFFF;
+}
+
+#blackstrip {
+	background-color: #333;
+	width: 100%;
+	height: 25px;
+	color: white;
+	text-align: center;
+}
+
+#header {
+  background-color: #FFFFFF;
+  padding: 20px 0px;
+  padding-top: 0px;
+  color: black;
+  text-align: center;
+  font-size: auto; 
+  font-weight: none;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  text-align: left;
+}
+
+#header nav{
+  height: 100px;
+  z-index: -1;
+  font-family: Arial;
+	overflow: hidden;
+	position: fixed;
+	padding-top: 70px;
+	font-size: 15px;
+	font-weight: none;
+	text-align: right;
+}
+nav a{
+	color: black;
+	text-decoration: none;
+}
+#pad {
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 100px;
+  
+}
+#img{
+	position: fixed;
+	height: 90px;
+  padding-top: 10px;
+	transition: 0.4s;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.smallscr{
+	margin-top: -200px;
+	display:none;
+}
+
+.smimg{
+	display: none;
+	position: fixed;
+	width: 290px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mySlides {display:}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.top-right {
+  position: absolute;
+  top: 145px;
+  right: 10px;
+  font-size: 25px !important;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+/*
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  transform: scale(0);
+  transition: .5s ease;
+}
+
+.container1:hover .overlay {
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: wrap;
+}
+*/
+@media (max-width: 600px){
+	#header{width:1900px;}
+  .smallscr{display: inline-block;}
+  #blackstrip{display: none;}
+  #navb{display: none;}
+  #img{display: none;}
+  .smimg{display: inline-block;}
+  .prev,.next{top:30%;}
+  .top-right{top:55px;right:40px;}
+  .top-right table{font-size: 8pt !important;}
+  body{margin: -40px !important;}
+}
+
+/*Main Page Content Font*/
+div{
+  font-family: Verdana;
+  font-size: 13px !important;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablinkabt {
+  background-color: #777;
+  color: black;
+  float: left;
+  border: 1;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  height:75px;
+  width: 33.3%;
+}
+
+.tablink:hover {
+  background-color: #b9b9b9;
+}
+.tablink {
+  background-color: #777;
+  color: black;
+  float: left;
+  border: 1;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  height:75px;
+  width: 12.5%;
+}
+
+.tablinkabt:hover {
+  background-color: #b9b9b9;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+#TempStaff	{background-color: #f5f5f5;}
+#MgmtSrc		{background-color: #f5f5f5;}
+#TurnkeyPrj	{background-color: #f5f5f5;}
+#Payroll		{background-color: #f5f5f5;}
+#StatComp	{background-color: #f5f5f5;}
+#IRleg		{background-color: #f5f5f5;}
+#LnDI		{background-color: #f5f5f5;}
+#HRM 		{background-color: #f5f5f5;}
+#BgVer		{background-color: #f5f5f5;}
+#IndVer		{background-color: #f5f5f5;}
+#MultiLin 		{background-color: #f5f5f5;}
+
+
+
+
+.containerContact {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.containerContact .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+}
+
