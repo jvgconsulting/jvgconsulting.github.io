@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<div id="header" class="header">
+<!--Side Menu for mobile--> 
+	<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none; " id="mySidebar">
+	  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+	  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+	  <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+	  <a href="Client.html" class="w3-bar-item w3-button">Clients</a>
+	  <a href="Candidates.html" class="w3-bar-item w3-button">Candidates</a>
+	  <a href="CSR.html" class="w3-bar-item w3-button">CSR Contribution</a>
+	  <a href="contacts.html" class="w3-bar-item w3-button">Contact Us</a>   
+	</div>
+	<div id="header" class="header">
+	<!--Header Images-->
+		<span class='smallscr' style="font-size:25px;" onclick="w3_open()">&#9776;</span>
+		<img class="smimg" src="img/img.png" style="padding-top: 0px; padding-left: 20px;">
+		<img src="img/img.png" id="img" style="padding-top:0px; z-index: -2;padding-left: 10px;"> 
+
+		<nav id="navb" style="font-size: 15px; padding-left: 880px;top: 1px;">
+		<i class="fas fa-phone" style="color:#142578;text-shadow:0px 0px 1px #142578;"></i><a style="color:#142578;  text-shadow:0px 0px 1px #142578;">&nbsp;&nbsp;+91 40 40110103</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+		<i class="fas fa-envelope" style="color:#142578;text-shadow:0px 0px 1px #142578;"></i>&nbsp;&nbsp;<a href="mailto:info@jvgconsulting.co.in" style="color:#142578;text-shadow:0px 0px 1px #142578;">info@jvgconsulting.co.in</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<br><br>
+		  <a class="shadow" href="index.html">Home</a>&nbsp;&nbsp;|
+		  <a class="shadow" href="aboutus.html">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a class="shadow"href="Client.html">Clients</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a class="shadow"href="Candidates.html">Candidates</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a class="shadow"href="CSR.html">CSR</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a class="active" href="contacts.html">Contact Us</a>
+		</nav>
+
+	</div>
+ </div>
+<body style="margin-top: 100px;">
+  <!--About Us Content-->
+
+	<div style="margin:100px;margin-top: 120px; font-size: 18px;">
+
+		<div style="background-color: #142578; width: 100%;">
+		<h1 style="font-size: 24px; font-family: Arial; color: white;"><b>&nbsp;&nbsp;&nbsp; CONTACT US</b></h1>
+
+		</div>
+
+		<div class="containerContact">
+		  <img src="img/Contact_us.jpg" alt="Contacts" style="width:100%; height:80%;">
+			  <div  id="rcorners1" >
+			  
+			  <fieldset>
+        <legend>Enquiry Form</legend>
+        <p>
+          <label for="name">Your Name *</label>
+          <br>
+          <input type="text" id="name" name="name" style="width:300px;">
+        </p>
+        <p>
+          <label for="telephone">Telephone Number *</label>
+          <br>
+          <input type="text" id="telephone" name="telephone" style="width:300px;">
+        </p>
+        <p>
+          <label for="email2">eMail *</label>
+          <br>
+          <input type="text" id="email2" name="email" style="width:300px;">
+        </p>
+        <p>
+          <label for="organization">Organization (if any)</label>
+          <br>
+          <input type="text" id="organization" name="organization" style="width:300px;">
+        </p>
+      
+        <p>
+          <label for="message">Your Message *</label>
+          <br>
+          <textarea name="textarea" id="message" cols="45" rows="3" style="width:300px;"></textarea>
+        </p>
+        <p class="submit">
+          <input type="submit" value="Submit">   <input type="reset" value="Clear">
+        </p>
+      </fieldset>
+			  
+			  
+			  
+			  </div>
+		</div>
+
+<h1>JVG Consulting - Contact Us</h1>
+
+<table style="width:100%;">
+  <tr ><td>
+
+<p><strong> ADDRESS</strong> <br> #10-2-238/E, Sree Rama Bhavanamu,<br/>
+2nd Floor, Above Heritage Fresh,<br/>
+Road No: 5, West Marredpally,<br/>
+Hyderabad - 500 026, Telangana,<br/>
+INDIA
+     </p></td><td>
+     <strong>Mobile:</strong> 91-9949877790 <br> 
+      <strong>Phone:</strong> 040-40110103 <br>
+     <strong>E-mail:</strong></label>
+      <a href="mailto:info@jvgconsulting.co.in">info@jvgconsulting.co.in</a><br><span class="space" style="margin-right:45px;"></span><a href="mailto:gopichand@jvgconsulting.co.in">gopichand@jvgconsulting.co.in</a></td>
+</tr>
+</table>
+	</div>
+
+</body>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<div id="blackstrip" style="position: absolute;"> Site developed and Manintained by Diart Creatives.    Copyright restricted </div>
+</html>
