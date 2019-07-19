@@ -1,0 +1,352 @@
+/*Website Header CSS*/
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F1EF    /*#d2dbe8*/
+}
+
+.header {
+  height: 10px;
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 100px;
+}
+
+.header a{
+	background-color: #F1F1EF;
+}
+
+#blackstrip {
+	background-color: #333;
+	width: 100%;
+	height: 25px;
+	color: white;
+	text-align: center;
+}
+
+#header {
+  background-color: #F1F1EF; /*#F1F1EF;*/
+  padding: 0px 0px;
+  padding-top: 0px;
+  color: black;
+  text-align: center;
+  font-size: auto; 
+  font-weight: none;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  text-align: left;
+}
+
+#header nav{
+  height: 100px;
+  z-index: -1;
+  font-family: Arial;
+	overflow: hidden;
+	position: fixed;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: none;
+	text-align: right;
+
+}
+nav a{
+	color: #142578;  /* On hover, main menue */
+	text-decoration: none;
+}
+#pad {
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 00px;
+  
+}
+#img{
+	position: fixed;
+	height: 90px;
+  padding-top: 10px;
+	transition: 0.4s;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+.active{
+		  font-weight:normal;
+  text-shadow:0px 0px 1px #142578;
+  color:	#142578
+}
+
+a {
+  color:#142578;
+}
+
+a.shadow:hover {
+  font-weight:normal;
+  text-shadow:0px 0px 1px #142578;
+}
+
+.smallscr{
+  cursor: pointer;
+	margin-top: 8px;
+  display: none;
+}
+
+.smimg{
+	display: none;
+	position: fixed;
+	width: 290px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mySlides {display:}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.top-right {
+  position: absolute;
+  top: 145px;
+  right: 10px;
+  font-size: 25px !important;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+@media (max-width: 1200px){
+	#header{width:100px;}
+  .smallscr{display: inline-block;}
+  #blackstrip{display: none;}
+  #navb{display: none;}
+ #rcorners1{display: none;}
+  #img{display: none;}
+  .smimg{display: inline;}
+  .prev,.next{top:30%;}
+  .top-right{top:10px;right:-20px;}
+  .top-right table{font-size: 5pt !important;}
+  body{top:20px !important;}
+  #pad{height: 0px;}
+}
+
+/*Main Page Content Font*/
+div{
+  font-family: Verdana;
+  font-size: 13px !important;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 0%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links About Us */
+.tablinkabt {
+  background-color: #777;
+  color: black;
+  float: left;
+  border: 1;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  height:75px;
+  width: 33.3%;
+}
+.tablinkabt:hover {
+  background-color: #b9b9b9;
+  border: 1;
+}
+/* Style tab links Clients services */
+.tablink:hover {
+  background-color: #b9b9b9;
+}
+.tablink {
+  background-color: #777;
+  color: black;
+  float: left;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  height:75px;
+  width: 12.5%;
+}
+/* Style tab links Candidate services */
+.tablinkCand:hover {
+  background-color: #b9b9b9;
+}
+.tablinkCand {
+  background-color: #777;
+  color: black;
+  float: left;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  height:75px;
+  width: 25%;
+}
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+#TempStaff	{background-color: #b9b9b9;}
+#MgmtSrc		{background-color: #b9b9b9;}
+#TurnkeyPrj	{background-color: #b9b9b9;}
+#Payroll		{background-color: #b9b9b9;}
+#StatComp	{background-color: #b9b9b9;}
+#IRleg		{background-color: #b9b9b9;}
+#LnDI		{background-color: #b9b9b9;}
+#HRM 		{background-color: #b9b9b9;}
+#BgVer		{background-color: #b9b9b9;}
+#IndVer		{background-color: #b9b9b9;}
+#MultiLin 		{background-color: #b9b9b9;}
+#Cand_Guidance {background-color: #b9b9b9;}
+#Cand_ResumeB{background-color: #b9b9b9;}
+#Cand_Placement {background-color: #b9b9b9;}
+#Cand_SkillD {background-color: #b9b9b9;}
+#Cand_FinAssist {background-color: #b9b9b9;}
+
+.containerContact {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.containerContact .content {
+  position: absolute; /* Position the background text F1F1EF */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+}
+
+/* Text box setting in Contact us image */
+#rcorners1 {      
+	  position: absolute;    
+  top: 10px;
+  right: 20px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 350px;
+  height: 450px;
+  opacity: 0.7 ; 
+}
+
+
