@@ -10,7 +10,7 @@ body {
   position: fixed;
   background-color: #FFFFFF;
   width: 1400px;
-  height: 100px;
+  height: 100px;  /*height of top menu bar white one set for normal browser with 1200px and more*/
 }
 
 .header a{
@@ -60,7 +60,7 @@ nav a{
   position: fixed;
   background-color: #FFFFFF;
   width: 1400px;
-  height: 00px;
+  height: 100px;
   
 }
 #img{
@@ -207,12 +207,29 @@ img {vertical-align: middle;}
   text-align: center;
   color: black;
 }
+
+.mainbody{
+ margin:50px;
+ margin-top: 120px; 
+ font-size: 18px;
+
+}
+.Mobilecorner
+{
+display: none;
+}
 @media (max-width: 1200px){
-	#header{width:100px;}
+	#header{width:100%; height:60px } /*height and width of top menu bar white one set for mobile browser with 1200px or below*/
+  .mainbody{ margin-top: 60px;}
   .smallscr{display: inline-block;}
   #blackstrip{display: none;}
   #navb{display: none;}
+  .Mobilecorner{display: inline;}
  #rcorners1{display: none;}
+  #rcorners2{display: none;}
+   #rcorners3{display: none;}
+    #rcorners4{display: none;}
+     #rcorners5{display: none;}
   #img{display: none;}
   .smimg{display: inline;}
   .prev,.next{top:30%;}
@@ -236,14 +253,17 @@ body, html {
   height: 0%;
   margin: 0;
   font-family: Arial;
+    color: #142578;
 }
 
 /* Style tab links About Us */
 .tablinkabt {
-  background-color: #777;
-  color: black;
+  background-color: #696969;
+  color: #142578;
   float: left;
-  border: 1;
+  border-top-left-radius:  20px;
+  border-top-right-radius : 20px;
+  border: 0;
   outline: none;
   cursor: pointer;
   padding: 10px 16px;
@@ -252,18 +272,13 @@ body, html {
   height:75px;
   width: 33.3%;
 }
-.tablinkabt:hover {
-  background-color: #b9b9b9;
-  border: 1;
-}
-/* Style tab links Clients services */
-.tablink:hover {
-  background-color: #b9b9b9;
-}
+
 .tablink {
-  background-color: #777;
-  color: black;
+  background-color: #696969;
+  color: #142578;
   float: left;
+  border-top-left-radius:  20px;
+  border-top-right-radius : 20px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -276,11 +291,23 @@ body, html {
 /* Style tab links Candidate services */
 .tablinkCand:hover {
   background-color: #b9b9b9;
+  color: #142578;
+}
+.tablinkabt:hover {
+  background-color: #b9b9b9;
+  color: #142578;
+}
+/* Style tab links Clients services */
+.tablink:hover {
+   background-color: #b9b9b9;
+  color: #142578;
 }
 .tablinkCand {
-  background-color: #777;
-  color: black;
+  background-color: #696969;
+  color: #142578;
   float: left;
+  border-top-left-radius:  20px;
+  border-top-right-radius : 20px;
   border: 0;
   outline: none;
   cursor: pointer;
@@ -294,28 +321,28 @@ body, html {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: black;
+  color: #142578;
   display: none;
   padding: 20px 20px;
   height: 100%;
 }
 
-#TempStaff	{background-color: #b9b9b9;}
-#MgmtSrc		{background-color: #b9b9b9;}
-#TurnkeyPrj	{background-color: #b9b9b9;}
-#Payroll		{background-color: #b9b9b9;}
-#StatComp	{background-color: #b9b9b9;}
-#IRleg		{background-color: #b9b9b9;}
-#LnDI		{background-color: #b9b9b9;}
-#HRM 		{background-color: #b9b9b9;}
-#BgVer		{background-color: #b9b9b9;}
-#IndVer		{background-color: #b9b9b9;}
-#MultiLin 		{background-color: #b9b9b9;}
-#Cand_Guidance {background-color: #b9b9b9;}
-#Cand_ResumeB{background-color: #b9b9b9;}
-#Cand_Placement {background-color: #b9b9b9;}
-#Cand_SkillD {background-color: #b9b9b9;}
-#Cand_FinAssist {background-color: #b9b9b9;}
+#TempStaff	{background-color: #C0C0C0;}
+#MgmtSrc		{background-color: #C0C0C0;}
+#TurnkeyPrj	{background-color: #C0C0C0;}
+#Payroll		{background-color: #C0C0C0;}
+#StatComp	{background-color: #C0C0C0;}
+#IRleg		{background-color: #C0C0C0;}
+#LnDI		{background-color: #C0C0C0;}
+#HRM 		{background-color: #C0C0C0;}
+#BgVer		{background-color: #C0C0C0;}
+#IndVer		{background-color: #C0C0C0;}
+#MultiLin 		{background-color: #C0C0C0;}
+#Cand_Guidance {background-color: #C0C0C0;}
+#Cand_ResumeB{background-color: #C0C0C0;}
+#Cand_Placement {background-color: #C0C0C0;}
+#Cand_SkillD {background-color: #C0C0C0;}
+#Cand_FinAssist {background-color: #C0C0C0;}
 
 .containerContact {
   position: relative; 
@@ -333,9 +360,71 @@ body, html {
   padding: 10px; /* Some padding */
 }
 
+
+
 /* Text box setting in Contact us image */
 #rcorners1 {      
 	  position: absolute;    
+  bottom: 20px;
+  right: 20px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 350px;
+  height: 150px;
+  opacity: 0.7 ; 
+}
+
+#rcorners2 {      
+      position: absolute;    
+  bottom: 20px;
+  right: 225px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 750px;
+  height: 100px;
+  opacity: 0.7 ; 
+}
+
+#rcorners3 {      
+      position: absolute;    
+  bottom: 20px;
+  right: 50px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 450px;
+  height: 150px;
+  opacity: 0.7 ;
+}
+
+
+#rcorners4 {      
+       position: absolute;    
+  bottom: 20px;
+  right: 50px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 450px;
+  height: 150px;
+  opacity: 0.7 ;
+}
+#rcorners5 {      
+    position: absolute;    
   top: 10px;
   right: 20px;
   color: #142578;
@@ -348,5 +437,3 @@ body, html {
   height: 450px;
   opacity: 0.7 ; 
 }
-
-
