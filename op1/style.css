@@ -1,0 +1,511 @@
+/*Website Header CSS*/
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F1EF    /*#d2dbe8*/
+}
+
+.header {
+  height: 10px;
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 100px;  /*height of top menu bar white one set for normal browser with 1200px and more*/
+}
+
+.header a{
+	background-color: #FFFFFF;
+}
+
+#blackstrip {
+	background-color: #333;
+	width: 100%;
+	height: 25px;
+	color: white;
+	text-align: center;
+}
+
+#header {
+  background-color: #F1F1EF; /*#F1F1EF;*/
+  padding: 0px 0px;
+  padding-top: 0px;
+  color: black;
+  text-align: center;
+  font-size: auto; 
+  font-weight: none;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  text-align: left;
+}
+
+#header nav{
+  height: 100px;
+  z-index: -1;
+  font-family: Arial;
+	overflow: hidden;
+	position: fixed;
+	padding-top: 10px;
+	font-size: 15px;
+	font-weight: none;
+	text-align: right;
+
+}
+nav a{
+	color: #142578;  /* On hover, main menue */
+	text-decoration: none;
+}
+#pad {
+  z-index: 2;
+  position: fixed;
+  background-color: #FFFFFF;
+  width: 1400px;
+  height: 100px;
+  
+}
+#img{
+  z-index: 3;
+	position: fixed;
+	height: 90px;
+  padding-top: 10px;
+	transition: 0.4s;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+.active{
+		  font-weight:normal;
+  text-shadow:0px 0px 1px #142578;
+  color:	#142578
+}
+
+a {
+  color:#142578;
+}
+
+a.shadow:hover {
+  font-weight:normal;
+  text-shadow:0px 0px 1px #142578;
+}
+
+.smallscr{
+  cursor: pointer;
+	margin-top: 8px;
+  display: none;
+}
+
+.smimg{
+	display: none;
+	position: fixed;
+	width: 290px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mySlides {display:}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.top-right {
+  position: absolute;
+  top: 145px;
+  right: 10px;
+  font-size: 25px !important;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.mainbody{
+ margin:50px;
+ margin-top: 120px; 
+ font-size: 18px;
+
+}
+.Mobilecorner
+{
+display: none;
+}
+@media (max-width: 1200px){
+	#header{width:100%; height:60px } /*height and width of top menu bar white one set for mobile browser with 1200px or below*/
+  .mainbody{ margin-top: 60px;}
+  .smallscr{display: inline-block;}
+  #blackstrip{display: none;}
+  #navb{display: none;}
+  .Mobilecorner{display: inline;}
+ #rcorners1{display: none;}
+  #rcorners2{display: none;}
+   #rcorners3{display: none;}
+    #rcorners4{display: none;}
+     #rcorners5{display: none;}
+  #img{display: none;}
+  .smimg{display: inline;}
+  .prev,.next{top:30%;}
+  .top-right{top:10px;right:-20px;}
+  .top-right table{font-size: 5pt !important;}
+  body{top:20px !important;}
+  #pad{height: 0px;}
+}
+
+/*Main Page Content Font*/
+div{
+  font-family: Verdana;
+  font-size: 16px !important;
+}
+
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 0%;
+  margin: 0;
+  font-family: Arial;
+    color: #142578;
+}
+
+/* Style tab links About Us */
+.tablinkabt {
+  background-color: #696969;
+  color: #142578;
+  float: left;
+  border-top-left-radius:  20px;
+  border-top-right-radius : 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  height:75px;
+  width: 33.3%;
+}
+
+
+.tablinkabt:hover {
+  background-color: #b9b9b9;
+  color: #142578;
+}
+
+.tablink:hover {
+   background-color: #b9b9b9;
+  color: #142578;
+}
+
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #142578;
+  display: none;
+  padding: 20px 20px;
+  height: 100%;
+}
+
+#TempStaff	{background-color: #C0C0C0;}
+#MgmtSrc		{background-color: #C0C0C0;}
+#TurnkeyPrj	{background-color: #C0C0C0;}
+#Payroll		{background-color: #C0C0C0;}
+#StatComp	{background-color: #C0C0C0;}
+#IRleg		{background-color: #C0C0C0;}
+#LnDI		{background-color: #C0C0C0;}
+#HRM 		{background-color: #C0C0C0;}
+#BgVer		{background-color: #C0C0C0;}
+#IndVer		{background-color: #C0C0C0;}
+#MultiLin 		{background-color: #C0C0C0;}
+#Cand_Guidance {background-color: #C0C0C0;}
+#Cand_ResumeB{background-color: #C0C0C0;}
+#Cand_Placement {background-color: #C0C0C0;}
+#Cand_SkillD {background-color: #C0C0C0;}
+#Cand_FinAssist {background-color: #C0C0C0;}
+
+.containerContact {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.containerContact .content {
+  position: absolute; /* Position the background text F1F1EF */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+}
+
+
+
+/* Text box setting in Contact us image */
+#rcorners1 {      
+	  position: absolute;    
+  bottom: 20px;
+  right: 20px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 350px;
+  height: 150px;
+  opacity: 0.7 ; 
+}
+
+#rcorners2 {      
+      position: absolute;    
+  bottom: 20px;
+  right: 225px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 10px; 
+  width: 850px;
+  height: 100px;
+  opacity: 0.7 ; 
+}
+
+#rcorners4 {      
+       position: absolute;    
+  bottom: 20px;
+  right: 50px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 450px;
+  height: 150px;
+  opacity: 0.7 ;
+}
+#rcorners5 {      
+    position: absolute;    
+  top: 10px;
+  right: 20px;
+  color: #142578;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 350px;
+  height: 450px;
+  opacity: 0.7 ; 
+}
+
+
+-----------------------------------------------------------
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+nav{
+	width: 100%;
+	height: 40px;
+	background-color: white;
+}
+
+nav li{
+	list-style-type: none;
+	float: right;
+	line-height: 50px;
+	padding-right: 4.8%;
+	height: 50px;
+}
+
+
+nav li a{
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover{
+	color: green;
+}
+	
+.object{
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+	display: table;
+}
+
+h1{
+	margin: 0;
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 50px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+.content{
+	  position: relative;
+	  min-height: 20%;
+	  padding: 4em 0;
+	  line-height: 1.6;
+	  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	  z-index: 1;
+	  font-size: 24px;
+	  background-color: #C0C0C0;
+}
+.content p{
+	margin: 40px ;
+}
+
+.one{
+	background-image: url("../img/computer.jpg");	
+}
+.two{
+	background-image: url("../img/CandidMain.jpg");
+}
+.three{
+	background-image: url("../img/meeting.jpg");
+}
+.four{
+	background-image: url("../img/Contact_us.jpg");
+}
+
+.collapsible {
+  background-color:#F1F1EF ;
+  color: #142578;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #C0C0C0;
+} 
+
+.content1 {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #C0C0C0 ;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
